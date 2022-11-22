@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "21ff2004-6ee8-47e7-980b-63d8ae6cccf0",
+		"name": "Gobierno Digital",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20302519"
+	},
+	"item": [
+		{
+			"name": "Get costos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://egx-vu-gobiernodigital.azurewebsites.net/api/Catastral/Costo",
+					"protocol": "https",
+					"host": [
+						"egx-vu-gobiernodigital",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Catastral",
+						"Costo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get catsatral list",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://egx-vu-gobiernodigital.azurewebsites.net/api/Catastral/GetCatastral",
+					"protocol": "https",
+					"host": [
+						"egx-vu-gobiernodigital",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Catastral",
+						"GetCatastral"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
