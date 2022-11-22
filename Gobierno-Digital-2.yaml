@@ -132,7 +132,28 @@ paths:
         '200':
           description: Successful response
           content:
-            application/json: {}
+            application/json:
+              examples:
+                Example 1:
+                  value:
+                    headerTable:
+                      id: string
+                      valorCatastral: string
+                      folioCatastral: string
+                      claveCatastral: string
+                      direcion: string
+                      adeudo: string
+                      propietarioActual: string
+                      pagado: string
+                    catastrals:
+                      - id: string
+                        valorCatastral: 0
+                        folioCatastral: string
+                        claveCatastral: string
+                        direcion: string
+                        adeudo: 0
+                        propietarioActual: string
+                        pagado: true
             application/xml:
               schema:
                 type: object
@@ -255,4 +276,7 @@ paths:
                         adeudo: 101.1
                         propietarioActual: asd
                         pagado: true
+              examples:
+                Example 1:
+                  value: '[object Object]'
       description: ''
