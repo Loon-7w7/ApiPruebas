@@ -154,6 +154,8 @@ paths:
                         adeudo: 0
                         propietarioActual: string
                         pagado: true
+              schema:
+                $ref: ./models/catastral.yaml
             application/xml:
               schema:
                 type: object
@@ -279,4 +281,20 @@ paths:
               examples:
                 Example 1:
                   value: '[object Object]'
+            multipart/form-data:
+              schema:
+                type: object
+                properties:
+                  '':
+                    type: string
+            text/html:
+              schema:
+                type: object
+                properties: {}
+            text/plain:
+              schema:
+                type: object
+                properties: {}
+          headers: {}
       description: ''
+    parameters: []
